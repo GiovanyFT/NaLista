@@ -18,7 +18,6 @@ class _TelaLoginState extends State<TelaLogin> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
     _controle = ControleTelaLogin();
   }
 

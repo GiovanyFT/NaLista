@@ -27,7 +27,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  shared_preferences: ^0.5.6+3
   flutter_launcher_icons: ^0.7.5
   firebase_auth: ^0.16.0
   fluttertoast: ^4.0.0

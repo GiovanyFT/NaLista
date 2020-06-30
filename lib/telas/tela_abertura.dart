@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nalista/telas/controle_interacao/controle_tela_abertura.dart';
 
-
-
 class TelaAbertura extends StatefulWidget {
   @override
   _TelaAberturaState createState() => _TelaAberturaState();
@@ -11,14 +9,12 @@ class TelaAbertura extends StatefulWidget {
 class _TelaAberturaState extends State<TelaAbertura> {
   ControleTelaAbertura _controle = ControleTelaAbertura();
 
-
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _controle.inicializarAplicacao(context);
   }
-
 
   @override
   Widget build(BuildContext context) {

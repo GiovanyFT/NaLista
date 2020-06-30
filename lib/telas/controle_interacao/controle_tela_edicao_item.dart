@@ -37,19 +37,15 @@ class ControleTelaEdicaoItem {
   }
 
   void _inserir_item() {
-
-
     Item item = Item(
       nome: controlador_nome.text,
       quantidade: int.parse(controlador_quantidade.text),
       id_usuario: usuario.id,
       eh_urgente: eh_urgente,
     );
-
     // Salvando no serviço de armazenamento
     DocumentReference docRef = _collection_itens.document();
     docRef.setData(item.toMap());
-
   }
 
   void salvar_item(BuildContext context) {

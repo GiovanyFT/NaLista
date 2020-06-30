@@ -23,7 +23,6 @@ class ControleTelaPrincipal{
   Stream<QuerySnapshot> get stream => _collection_itens.where("id_usuario", isEqualTo: usuario.id).snapshots();
 
   void obterItens(QuerySnapshot data){
-    print("Controle Tela principal =====  O usuário é $usuario");
     document_itens = data.documents;
     itens = document_itens.map((DocumentSnapshot document) {
       return Item.fromMap(document.data);
